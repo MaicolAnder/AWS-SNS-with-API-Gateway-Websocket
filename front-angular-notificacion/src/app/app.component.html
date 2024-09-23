@@ -1,0 +1,15 @@
+<div>
+  <h1>Push Notificacion using AWS SNS and API Gateway Web sockets</h1>
+</div>
+<router-outlet></router-outlet>
+<div class="container">
+  <h1>Message Sender</h1>
+  <button (click)="sendMessage()">Send Message</button>
+  <hr>
+  <h2>Received Messages:</h2>
+  <ul>
+    <li *ngFor="let message of messages">
+      {{ message.user }} ({{ message.date | date:'short' }}): {{ message.message }}
+    </li>
+  </ul>
+</div>

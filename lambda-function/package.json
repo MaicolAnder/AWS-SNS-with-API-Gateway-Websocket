@@ -1,0 +1,31 @@
+{
+    "name": "lambda-message-processor",
+    "version": "1.0.0",
+    "description": "AWS Lambda function for processing and broadcasting messages",
+    "main": "/handlers/main.js",
+    "scripts": {
+        "build": "tsc",
+        "test": "jest",
+        "deploy": "serverless deploy",
+        "start:local": "serverless offline start"
+    },
+    "dependencies": {
+        "aws-sdk": "^2.1691.0",
+        "winston": "^3.3.3"
+    },
+    "devDependencies": {
+        "@types/aws-lambda": "^8.10.83",
+        "@types/jest": "^27.0.2",
+        "@types/node": "^16.10.3",
+        "jest": "^27.2.5",
+        "serverless": "^2.60.0",
+        "serverless-dynamodb-local": "^0.2.40",
+        "serverless-offline": "^8.8.1",
+        "serverless-offline-sns": "^0.76.0",
+        "serverless-plugin-typescript": "^2.1.0",
+        "ts-jest": "^27.0.5",
+        "typescript": "^4.4.3"
+    },
+    "author": "",
+    "license": "ISC"
+}
